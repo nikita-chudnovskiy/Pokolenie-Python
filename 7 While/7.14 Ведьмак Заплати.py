@@ -24,3 +24,6 @@ for i in (25, 10, 5, 1):
         k += 1
         n -= i
 print(k)
+
+n =49//25
+print(n)
