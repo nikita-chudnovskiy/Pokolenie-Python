@@ -32,3 +32,14 @@ print(pervaya)                  # print('ПЕРВАЯ', pervaya)
 print(pervaya+l_posl)           # print(pervaya+l_posl)
 # print(max_last)                # print('Максимальная цифра равна', max_last)
 # print(min_last)                # print('Минимальная цифра равна', min_last)
+
+
+n,sm,kol,pr = int(input()),0,0,1
+np = n % 10
+while n != 0:
+    sm += n % 10
+    kol +=1
+    pr *= n % 10
+    n1 = n
+    n = n // 10
+print(sm,kol,pr,sm/kol,n1,n1+np,sep='\n')
