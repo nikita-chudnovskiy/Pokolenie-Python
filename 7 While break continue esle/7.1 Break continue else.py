@@ -9,14 +9,14 @@ print(result)
 # Если встречается 7
 n = int(input())
 number = n
-f = True
+flag = True
 while n != 0:
     last_num = n % 10
     if last_num == 7:
-        f = False
+        flag = False
         break
     n = n // 10  # n//=10
-if f:
+if flag:
     print('В числе нет 7 ')
 else:
     print('В чиле есть 7 ', number)
